@@ -1,0 +1,15 @@
+getenv = True
+universe = vanilla
+executable = run_test.sh
+output = run-matlab.out
+error = run-matlab.err
+log = run-matlab.log
+requirements = (HasR2101 == true) && (TARGET.OpSys == "LINUX")
+should_transfer_files = YES
+transfer_input_files = run_test.sh, test
+arguments = /opt/matlab/matlabCR/v714
++AccountingGroup = "Limnology_Hanson"
++WantFlocking = true
+when_to_transfer_output = ON_EXIT
+notification = never
+queue
