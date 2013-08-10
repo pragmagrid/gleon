@@ -1,0 +1,3 @@
+NAME = Rnolib
+RELEASE = 1
+VERSION = 1

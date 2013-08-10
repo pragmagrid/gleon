@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no"?>
+
+<kickstart>
+
+
+	<description>
+	Your gleon roll description here
+	</description>
+
+	<copyright>
+	Copyright (c) 2000 - 2009 The Regents of the University of California.
+	All rights reserved. Rocks(r) v5.2 www.rocksclusters.org
+	
+	</copyright>
+
+	<changelog>
+	$Log: gleon-server.xml,v $
+	Revision 1.1  2011/01/19 04:38:30  phil
+	Wire in the new plugin that Nadya just built.
+	Add readline-devel to a server so that R Roll can be built (or rebuilt) as
+	desired.
+	
+	Revision 1.2  2011/01/18 19:48:12  phil
+	First basic Gleon roll.
+	
+	Revision 1.1  2011/01/14 20:29:03  phil
+	Shell of GLEON roll
+	
+	</changelog>
+
+	<!-- So that R Roll can be compiled a Frontend that has the GLEON roll -->
+	<package>readline-devel</package>
+
+	<!-- Condor Plugin to add appropriate Attributes --> 
+	<package>plugin_gleon</package>
+	<package>roll-gleon-usersguide</package>
+
+
+</kickstart>

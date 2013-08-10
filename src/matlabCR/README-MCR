@@ -1,0 +1,17 @@
+NOTE 1: Creating RPM for MCR resulted in removing of the symbolic info from matlab
+dynamic libraries  and removing java jars in resultign rpm. Workaround: build tar.gz file.
+NOTE 2 : Resulting tar file is ~200MB, too large to put on git. 
+
+		HOWTO create tar.gz
+
+Download Matlab Compielr Runtime (MCR) from 
+	http://www.mathworks.com/products/compiler/mcr
+
+Run installer and provide  location.
+  ./MCRInstaller.bin -P bean421.installLocation="matlabCR" -silent
+
+Create tar distro (VERSION in verison.mk)
+   tar czvf matlabCR-$VERSION.tar.gz matlabCR
+
+
+
